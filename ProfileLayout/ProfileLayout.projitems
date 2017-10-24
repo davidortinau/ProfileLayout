@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{844EE0FF-83C0-4C40-939C-6F6E5BC131D2}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ProfileLayout</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ProfileLayoutPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ConnectSocialButtonView.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\StrengthIndicators.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ProfileLayoutPage.xaml.cs">
+      <DependentUpon>ProfileLayoutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\InvertedBoolConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\StrengthIndicators.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\StrengthToBoolConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ConnectSocialButtonView.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\StringToColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SocialServiceViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\UserProfileViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\PasswordAdvisor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Converters\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Utils\" />
+  </ItemGroup>
+</Project>
