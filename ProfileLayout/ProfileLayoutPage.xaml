@@ -156,7 +156,7 @@
     <ContentPage.Content>
         
         <StackLayout
-            CompressedLayout.IsHeadless="false"
+            CompressedLayout.IsHeadless="true"
             Spacing="0"
             VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand">
@@ -205,7 +205,7 @@
 
             <StackLayout
             Spacing="0"
-            CompressedLayout.IsHeadless="false"
+            CompressedLayout.IsHeadless="true"
             VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand">
 
@@ -234,13 +234,13 @@
             <StackLayout
                 Margin="20"
                 Spacing="20"
-                CompressedLayout.IsHeadless="false"
+                CompressedLayout.IsHeadless="true"
                 HorizontalOptions="FillAndExpand"
                 Orientation="Horizontal">
 
                 <StackLayout 
                     Spacing="10"
-                    CompressedLayout.IsHeadless="false"
+                    CompressedLayout.IsHeadless="true"
                     Orientation="Vertical">
 
                         <controls:CircleImage 
@@ -278,7 +278,7 @@
 
                 <StackLayout 
                     Spacing="10"
-                    CompressedLayout.IsHeadless="false"
+                    CompressedLayout.IsHeadless="true"
                     HorizontalOptions="FillAndExpand"
                     Orientation="Vertical">
 
@@ -310,7 +310,7 @@
                 </StackLayout>
             </StackLayout>
 
-            <Grid Margin="20, 0, 20, 0" CompressedLayout.IsHeadless="false">
+            <Grid Margin="20, 0, 20, 0" CompressedLayout.IsHeadless="true">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="53" />
                     <RowDefinition Height="53" />
@@ -378,7 +378,7 @@
 
                 <StackLayout
                     Margin="0,20,0,40"
-                    CompressedLayout.IsHeadless="false"
+                    CompressedLayout.IsHeadless="true"
                     Grid.Row="4" Grid.ColumnSpan="2"
                     IsVisible="{Binding IsLoggedIn}">
 

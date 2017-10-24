@@ -13,13 +13,13 @@
 	</ContentView.Resources>
 
 	<ContentView.Content>
-		<StackLayout CompressedLayout.IsHeadless="false">
+		<StackLayout CompressedLayout.IsHeadless="true">
 			<StackLayout
 				HeightRequest="32"
-                CompressedLayout.IsHeadless="false"
+                CompressedLayout.IsHeadless="true"
 				Orientation="Horizontal">
 
-				<AbsoluteLayout VerticalOptions="Center" CompressedLayout.IsHeadless="false">
+				<AbsoluteLayout VerticalOptions="Center" CompressedLayout.IsHeadless="true">
 					<Button 
 						WidthRequest="130"
 						HeightRequest="32"
